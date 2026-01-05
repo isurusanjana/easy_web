@@ -1,0 +1,5 @@
+Eady_web
+Laravel 12
+Breez Starter Kit
+mailtrap.io
+
