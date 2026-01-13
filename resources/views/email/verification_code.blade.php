@@ -5,7 +5,7 @@
     <title>Verification Code Page</title>
 </head>
 <body>
-    <h1>Your Login Verification Code</h1>
+    <p>Hi,</p>
     <p>Your verification code is: <strong>{{ $code }}</strong></p>
     <p>Please enter this code to complete your login.</p>
 </body>
