@@ -61,9 +61,6 @@
                                             <div class="form-group mb-3">
                                                 <label for="emailaddress" class="form-label">Verification code</label>
                                                 <input class="form-control" type="text" id="code" name="code" required="" placeholder="Enter your code">
-                                                @error('code')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                @enderror
                                             </div>
                                             
                                             <div class="form-group mb-0 row">
