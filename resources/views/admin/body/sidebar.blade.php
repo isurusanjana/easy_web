@@ -32,46 +32,21 @@
                                     <span> Dashboard </span>
                                 </a>
                             </li>
-                            <!-- <li>
-                                <a href="#sidebarDashboards" data-bs-toggle="collapse">
-                                    <i data-feather="home"></i>
-                                    <span> Dashboard </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarDashboards">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="index.html" class="tp-link">Analytical</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce.html" class="tp-link">E-commerce</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li> -->
-                
-                            <!-- <li>
-                                <a href="landing.html" target="_blank">
-                                    <i data-feather="globe"></i>
-                                    <span> Landing </span>
-                                </a>
-                            </li> -->
 
                             <li class="menu-title">Pages</li>
-
                             <li>
                                 <a href="#sidebarAuth" data-bs-toggle="collapse">
                                     <i data-feather="users"></i>
-                                    <span> Authentication </span>
+                                    <span> Review Setup </span>
                                     <span class="menu-arrow"></span>
                                 </a>
                                 <div class="collapse" id="sidebarAuth">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="auth-login.html" class="tp-link">Log In</a>
+                                            <a href="{{ route('all.review') }}" class="tp-link">All Review</a>
                                         </li>
                                         <li>
-                                            <a href="auth-register.html" class="tp-link">Register</a>
+                                            <a href="auth-register.html" class="tp-link">Add Review</a>
                                         </li>
                                     </ul>
                                 </div>

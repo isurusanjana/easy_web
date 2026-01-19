@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Backend\ReviewController; 
 
 Route::get('/', function () {
     return view('home.index');
@@ -25,3 +26,15 @@ Route::post('/admin/login', [AdminController::class, 'AdminLogin'])->name('admin
 
 Route::get('/verify', [AdminController::class, 'ShowVerification'])->name('custom.verification.form');
 Route::post('/verify', [AdminController::class, 'VerificationVerify'])->name('custom.verification.verify');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [AdminController::class, 'AdminProfile'])->name('admin.profile');
+}); 
+
+Route::middleware('auth')->group(function () {
+   Route::controller(ReviewController::class)->group(function(){ 
+       Route::get('/all/review', 'AllReview')->name('all.review');
+       Route::get('/edit/review/{id}', 'EditReview')->name('edit.review');
+       Route::post('/update/review', 'UpdateReview')->name('update.review');
+       Route::get('/delete/review/{id}', 'DeleteReview')->name('delete.review');
+   }); 
+});

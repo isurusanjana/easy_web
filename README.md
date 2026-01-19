@@ -1,3 +1,69 @@
+# easy_web
+
+A lightweight Laravel-based web application for managing user profiles and reviews.
+
+## Requirements
+
+- PHP 8.1+ with CLI
+- Composer
+- Node.js (16+) and npm or yarn
+- A database supported by Laravel (MySQL, MariaDB, SQLite, Postgres)
+
+## Quick Setup
+
+1. Clone the repo
+
+   git clone <repo-url>
+   cd easy_web
+
+2. Install PHP dependencies
+
+   composer install
+
+3. Environment
+
+   cp .env.example .env
+   Edit `.env` to set your database and mail configuration.
+
+4. Generate app key
+
+   php artisan key:generate
+
+5. Run migrations and seeders
+
+   php artisan migrate --seed
+
+6. Install frontend dependencies and build assets
+
+   npm install
+   npm run dev
+
+7. Serve the app locally
+
+   php artisan serve
+
+## Running Tests
+
+- Run feature & unit tests:
+
+  ./vendor/bin/pest
+
+or
+
+  php artisan test
+
+## Project Notes
+
+- This project uses Vite for asset bundling and Pest for tests.
+- See `routes`, `app/Models`, and `resources/views` for primary application structure.
+
+## Contributing
+
+- Fork, create a feature branch, add tests, and open a pull request.
+
+## License
+
+MIT — see the LICENSE file if present.
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
