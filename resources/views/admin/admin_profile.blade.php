@@ -70,7 +70,7 @@
                                                                         <input type="text" class="form-control" id="email" name="email" value="{{ $profileData->email }}" placeholder="Email" aria-describedby="basic-addon1">
                                                                     </div>
                                                                 </div>
-                                                            </div>
+                                                            </div
 
                                                             <div class="form-group mb-3 row">
                                                                 <label class="form-label">Contact Phone</label>
