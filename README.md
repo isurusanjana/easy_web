@@ -11,8 +11,9 @@ just like content management system
 
 - PHP 8.1+ with CLI
 - Composer
-- Laravel 12
-- Node.js (16+) and npm or yarn
+- Laravel 12 with Breeze Starter Kit
+- PEST Unit testing
+- Node.js (16+) and npm 
 - MySQL
 
 ## Quick Setup
